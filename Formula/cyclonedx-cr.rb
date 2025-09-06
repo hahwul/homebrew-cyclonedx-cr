@@ -5,8 +5,8 @@
 class CyclonedxCr < Formula
   desc "Crystal tool for generating cyclonedx software bill of materials (sbom) from c"
   homepage "https://github.com/hahwul/cyclonedx-cr"
-  url "https://github.com/hahwul/cyclonedx-cr/archive/refs/tags/v0.1.6.tar.gz"
-  sha256 "5f7f6d293182928bece9f8eae5019933c84c493df326bad36456caea7dd5e725"
+  url "https://github.com/hahwul/cyclonedx-cr/archive/refs/tags/v0.1.7.tar.gz"
+  sha256 "86ad8eb42ae3c404b48bae745bf95ba0cc2d0c4c722488f84d9b9752fe68311a"
   license "MIT"
 
   depends_on "crystal"
