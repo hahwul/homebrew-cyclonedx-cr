@@ -5,16 +5,16 @@
 class CyclonedxCr < Formula
   desc "Crystal tool for generating cyclonedx software bill of materials (sbom) from c"
   homepage "https://github.com/hahwul/cyclonedx-cr"
-  url "https://github.com/hahwul/cyclonedx-cr/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "cb17fcd26d19744a5d7da700124b0c72fd2c7648c47ca56c6334d0cd66a3c422"
+  url "https://github.com/hahwul/cyclonedx-cr/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "d06a558eefee5322397004f04fa12da5e7ff2563a8008fdbe89e4bb43a264ddc"
   license "MIT"
 
   depends_on "crystal"
 
   def install
     system "shards install"
-system "shards build --release --no-debug --production"
-bin.install "bin/cyclonedx-cr"
+    system "shards build --release --no-debug --production"
+    bin.install "bin/cyclonedx-cr"
   end
 
   test do
